@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { rule, getQuestionAndAnswer } from '../games/even-game.js';
+import { rule, getQuestionAndAnswer } from '../games/calc-game.js';
 import { runGame } from '../src/index.js';
 
 runGame(rule, getQuestionAndAnswer);
