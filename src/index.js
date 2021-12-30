@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import sayName from './cli.js';
 
-const getRandomInt = (min = 0, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
+const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const runGame = (rule, getQuestionAndAnswer) => {
   const userName = sayName();
