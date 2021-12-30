@@ -16,8 +16,8 @@ const check = (operand1, operator, operand2) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const operand1 = getRandomInt(1, 10);
-  const operand2 = getRandomInt(1, 10);
+  const operand1 = getRandomInt(1, 20);
+  const operand2 = getRandomInt(1, 20);
   const operator = operators[getRandomInt(0, 2)];
   const gameQuestion = `${operand1} ${operator} ${operand2}`;
   const correctAnswer = String(check(operand1, operator, operand2));
