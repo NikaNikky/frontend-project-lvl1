@@ -1,8 +1,8 @@
-import { getRandomInt } from '../src/index.js';
+import { getRandomInt } from '../index.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-const gcd = (operand1, operand2) => {
+const getGcd = (operand1, operand2) => {
   let a = operand1;
   let b = operand2;
   while (a !== 0 && b !== 0) {
@@ -19,7 +19,7 @@ const getQuestionAndAnswer = () => {
   const operand1 = getRandomInt(1, 50);
   const operand2 = getRandomInt(1, 50);
   const gameQuestion = `${operand1}, ${operand2}`;
-  const correctAnswer = String(gcd(operand1, operand2));
+  const correctAnswer = String(getGcd(operand1, operand2));
   return [gameQuestion, correctAnswer];
 };
 

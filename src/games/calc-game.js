@@ -1,9 +1,9 @@
-import { getRandomInt } from '../src/index.js';
+import { getRandomInt } from '../index.js';
 
 const rule = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
-const check = (operand1, operator, operand2) => {
+const calculation = (operand1, operator, operand2) => {
   let result = 0;
   if (operator === '+') {
     result = operand1 + operand2;
@@ -20,7 +20,7 @@ const getQuestionAndAnswer = () => {
   const operand2 = getRandomInt(1, 20);
   const operator = operators[getRandomInt(0, 2)];
   const gameQuestion = `${operand1} ${operator} ${operand2}`;
-  const correctAnswer = String(check(operand1, operator, operand2));
+  const correctAnswer = String(calculation(operand1, operator, operand2));
   return [gameQuestion, correctAnswer];
 };
 
