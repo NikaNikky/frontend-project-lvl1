@@ -13,7 +13,7 @@ const getQuestionAndAnswer = () => {
   const randomItem = getRandomInt(0, progressionLength - 1);
   const correctAnswer = String(progression[randomItem]);
   progression.splice(randomItem, 1, '..');
-  const gameQuestion = `${progression}`;
+  const gameQuestion = progression.join(' ');
   return [gameQuestion, correctAnswer];
 };
 
