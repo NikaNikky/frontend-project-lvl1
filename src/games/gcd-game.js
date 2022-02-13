@@ -18,7 +18,7 @@ const getGcd = (operand1, operand2) => {
 const getQuestionAndAnswer = () => {
   const operand1 = getRandomInt(1, 20);
   const operand2 = getRandomInt(1, 20);
-  const gameQuestion = `${operand1}, ${operand2}`;
+  const gameQuestion = `${operand1} ${operand2}`;
   const correctAnswer = String(getGcd(operand1, operand2));
   return [gameQuestion, correctAnswer];
 };
